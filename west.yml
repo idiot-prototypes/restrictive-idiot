@@ -1,0 +1,21 @@
+# SPDX-License-Identifier: Apache-2.0
+
+manifest:
+  self:
+    path: restrictive-idiot
+
+  remotes:
+    - name: zephyrproject-rtos
+      url-base: https://github.com/zephyrproject-rtos
+    - name: civetweb
+      url-base: https://github.com/civetweb
+
+  projects:
+    - name: zephyr
+      remote: zephyrproject-rtos
+      revision: main
+      import: true
+    - name: civetweb
+      remote: civetweb
+      revision: master
+      import: true
